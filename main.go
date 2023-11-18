@@ -40,6 +40,7 @@ func main() {
 				Value:       "",
 				Usage:       "Sets the Kubernetes namespace to retrieve logs from.",
 				Destination: &namespace,
+				EnvVars:     []string{"PLOGS_NAMESPACE"},
 			},
 			&cli.StringFlag{
 				Name:        "containerName",
@@ -68,12 +69,14 @@ func main() {
 				Value:       false,
 				Usage:       "Follows log output after retrieving logs.",
 				Destination: &followLogs,
+				EnvVars:     []string{"PLOGS_FOLLOW"},
 			},
 			&cli.Int64Flag{
 				Name:        "tail",
 				Aliases:     []string{"t"},
 				Usage:       "Specifies the number of lines to retrieve from the end of the logs.",
 				Destination: &tailLines,
+				EnvVars:     []string{"PLOGS_TAIL_LINES"},
 			},
 		},
 
@@ -90,7 +93,7 @@ func main() {
 			}
 
 			// If namespace not provided, retrieve the current namespace
-			if len(namespace) <= 0 {
+			if len(namespace) == 0 {
 				namespace, err = cs.GetCurrentNamespace()
 			}
 			if err != nil {
