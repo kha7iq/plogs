@@ -23,9 +23,10 @@ var (
 
 func main() {
 	app := &cli.App{
-		Name:    "plogs",
-		Usage:   "Retrieve and manage Kubernetes pod logs with advanced filtering and highlighting.",
-		Version: version,
+		Name:      "plogs",
+		Usage:     "Retrieve and manage Kubernetes pod logs with advanced filtering and highlighting.",
+		UsageText: "kubectl plogs --pod mypod --namespace default --container nginx --tail 10 --follow ",
+		Version:   version,
 		Flags: []cli.Flag{
 			&cli.StringFlag{
 				Name:        "mark",
@@ -43,10 +44,10 @@ func main() {
 				EnvVars:     []string{"PLOGS_NAMESPACE"},
 			},
 			&cli.StringFlag{
-				Name:        "containerName",
+				Name:        "container",
 				Aliases:     []string{"c"},
 				Value:       "",
-				Usage:       "Specifies the container name within the pod to retrieve logs from.",
+				Usage:       "Specifies the container name within the pod to retrieve logs from incase of multiple containers.",
 				Destination: &containerName,
 			},
 			&cli.StringFlag{
