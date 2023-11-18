@@ -12,8 +12,8 @@
 ```bash
 # DEB
 export PLOGS_VERSION="0.1.1"
-wget -q https://github.com/kha7iq/ncp/releases/download/v${PLOGS_VERSION}/plogs_amd64.deb
-sudo dpkg -i ncp_amd64.deb
+wget -q https://github.com/kha7iq/plogs/releases/download/v${PLOGS_VERSION}/plogs_amd64.deb
+sudo dpkg -i plogs_amd64.deb
 # RPM
 sudo rpm -i plogs_amd64.rpm
 ```
@@ -38,7 +38,7 @@ curl -s https://raw.githubusercontent.com/kha7iq/plogs/main/install.sh | sudo sh
 ```bash
 # Chose desired version
 export PLOGS_VERSION="0.1.1"
-wget -q https://github.com/kha7iq/ncp/releases/download/v${PLOGS_VERSION}/plogs_linux_amd64.tar.gz && \
+wget -q https://github.com/kha7iq/plogs/releases/download/v${PLOGS_VERSION}/plogs_linux_amd64.tar.gz && \
 tar -xf plogs_linux_amd64.tar.gz && \
 chmod +x plogs && \
 sudo mv plogs /usr/local/bin/kubectl-plogs
@@ -59,7 +59,7 @@ sudo mv plogs /usr/local/bin/kubectl-plogs
 
 #### Get logs with highlighting
 ```bash
-kubectl plogs --namespace=default --label=app=myapp --mark=error --pod=my-pod --follow --tail=100
+kubectl plogs --namespace default --label app=myapp --mark fail --pod my-pod --follow --tail 100
 ```
 #### Get logs without specifying a container name
 
