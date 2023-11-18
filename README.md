@@ -1,7 +1,9 @@
-# plogs
+<h2 align="center">
+  <p align="center"><img width=30% src="./.github/img/logo.png"></p>
+</h2>
 
-## Overview
-`plogs` is a command-line tool that facilitates retrieving logs from Kubernetes pods with various filtering and highlighting options. It allows users to specify the namespace, container name, labels, and mark specific words for highlighting within the logs.
+# Pod Logs (plogs)
+`plogs` is a kubernetes plugin that facilitates retrieving logs from Kubernetes pods with various filtering and highlighting options. It allows users to specify the namespace, container name, labels, and mark specific words for highlighting within the logs.
 
 ## Usage
 
