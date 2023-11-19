@@ -24,7 +24,7 @@ var (
 func main() {
 	app := &cli.App{
 		Name:      "plogs",
-		Usage:     "Retrieve and manage Kubernetes pod logs with advanced filtering and highlighting.",
+		Usage:     "Retrieve and manage Kubernetes pod logs with filtering and highlighting.",
 		UsageText: "kubectl plogs --pod mypod --namespace default --container nginx --tail 10 --follow ",
 		Version:   version,
 		Flags: []cli.Flag{
