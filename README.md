@@ -101,19 +101,27 @@ sudo mv plogs /usr/bin/kubectl-plogs
   - Alias: `-t`
   - Specifies the number of lines to show from the end of logs.
 
+#### Alias
+Consider adding this alias to your `.bashrc` or `.zshrc` for convenience.
+```bash
+echo "alias kpl='kubectl plogs'" >> .bashcr
+
+echo "alias kplf='kubectl plogs -f'" >> .bashrc
+
+``` 
+
 #### Examples
 
 1. Retrieve logs from all pods matching label
 
 ```bash
-kubectl plogs -n dev -l app=myapp -m "fail" -p my-pod -t 10 -f
+kpl -n dev -l app=myapp -m "fail" -p my-pod -t 10
 ```
 2. Retrieve logs for a specific pod:
 
 ```bash
-kubectl plogs -n dev -p my-pod -t 10 -f
+kplf -n dev -p my-pod -t 10
 ```
-
 ### Prerequisites
 - Kubernetes cluster access or kubeconfig set up
 
