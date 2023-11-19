@@ -118,3 +118,9 @@ kubectl plogs -n dev -p my-pod -t 10 -f
 
 ## Issues
 If you encounter any problems or have suggestions for improvements, please [open an issue](https://github.com/kha7iq/plogs/issues) on GitHub.
+
+## Contributing
+
+Contributions, issues and feature requests are welcome!<br/>Feel free to check
+[issues page](https://github.com/kha7iq/plogs/issues). You can also take a look
+at the [contributing guide](https://github.com/kha7iq/plogs/blob/master/CONTRIBUTING.md).
