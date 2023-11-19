@@ -62,6 +62,7 @@ sudo mv plogs /usr/bin/kubectl-plogs
 ```
 </details>
 
+#### Checkout [release](https://github.com/kha7iq/plogs/releases) page for all supported OS binaries.
 
 ### Flags
 
