@@ -20,8 +20,16 @@
 
 ## Installation
 
+   **You can install the "plogs" plugin using** `krew`
+
+```bash
+kubectl krew install plogs
+```
+
+#### Alternative Installation Methods
+
 <details>
-    <summary>Linux</summary>
+    <summary>Linux Packages</summary>
 
 - Bash Install Script
 
