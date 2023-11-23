@@ -5,11 +5,10 @@ metadata:
 spec:
   version: {{ .TagName }}
   homepage: https://github.com/kha7iq/plogs
-  shortDescription: Retrieve and stream colorized logs from Kubernetes pods
+  shortDescription: Retrieve and stream colorized logs from Pods.
   description: |
-    The plogs plugin enables users to retrieve 
-    colorized logs from Kubernetes pods with 
-    various filtering and monitoring options.
+    Plogs retrieves colorized logs from Pods
+    with various filtering and monitoring options.
   platforms:
   - selector:
       matchLabels:
@@ -17,52 +16,27 @@ spec:
         arch: amd64
     {{addURIAndSha "https://github.com/kha7iq/plogs/releases/download/{{ .TagName }}/plogs_Darwin_x86_64.tar.gz" .TagName }}
     bin: plogs
-    files:
-    - from: plogs
-      to: .
-    - from: LICENSE
-      to: .
   - selector:
       matchLabels:
         os: darwin
         arch: arm64
     {{addURIAndSha "https://github.com/kha7iq/plogs/releases/download/{{ .TagName }}/plogs_Darwin_arm64.tar.gz" .TagName }}
     bin: plogs
-    files:
-    - from: plogs
-      to: .
-    - from: LICENSE
-      to: .
   - selector:
       matchLabels:
         os: linux
         arch: amd64
     {{addURIAndSha "https://github.com/kha7iq/plogs/releases/download/{{ .TagName }}/plogs_Linux_x86_64.tar.gz" .TagName }}
     bin: plogs
-    files:
-    - from: plogs
-      to: .
-    - from: LICENSE
-      to: .
   - selector:
       matchLabels:
         os: linux
         arch: arm64
     {{addURIAndSha "https://github.com/kha7iq/plogs/releases/download/{{ .TagName }}/plogs_Linux_arm64.tar.gz " .TagName }}
     bin: plogs
-    files:
-    - from: plogs
-      to: .
-    - from: LICENSE
-      to: .
   - selector:
       matchLabels:
         os: windows
         arch: amd64
     {{addURIAndSha "https://github.com/kha7iq/plogs/releases/download/{{ .TagName }}/plogs_Windows_x86_64.zip " .TagName }}
     bin: plogs.exe
-    files:
-    - from: plogs.exe
-      to: .
-    - from: LICENSE
-      to: .
