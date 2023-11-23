@@ -6,7 +6,7 @@ on:
       - 'v0.[0-9]+.[0-9]'
       
 jobs:
-  build-and-release:
+  Build-and-Release:
     runs-on: ubuntu-latest
     steps:
 
@@ -28,3 +28,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
   
+      - name: Update new version in krew-index
+        uses: rajatjindal/krew-release-bot@v0.0.46
