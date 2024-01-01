@@ -3,7 +3,7 @@ module github.com/kha7iq/pl
 go 1.20
 
 require (
-	github.com/urfave/cli/v2 v2.26.0
+	github.com/urfave/cli/v2 v2.27.1
 	k8s.io/api v0.28.5
 	k8s.io/apimachinery v0.28.5
 	k8s.io/cli-runtime v0.28.4
