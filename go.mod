@@ -4,8 +4,8 @@ go 1.20
 
 require (
 	github.com/urfave/cli/v2 v2.27.1
-	k8s.io/api v0.28.5
-	k8s.io/apimachinery v0.28.5
+	k8s.io/api v0.28.6
+	k8s.io/apimachinery v0.28.6
 	k8s.io/cli-runtime v0.28.4
 	k8s.io/client-go v0.28.5
 	sigs.k8s.io/controller-runtime v0.16.3
@@ -50,12 +50,12 @@ require (
 	github.com/xlab/treeprint v1.2.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	go.starlark.net v0.0.0-20230525235612-a134d8f9ddca // indirect
-	golang.org/x/net v0.17.0 // indirect
+	golang.org/x/net v0.19.0 // indirect
 	golang.org/x/oauth2 v0.8.0 // indirect
 	golang.org/x/sync v0.2.0 // indirect
-	golang.org/x/sys v0.14.0 // indirect
-	golang.org/x/term v0.13.0 // indirect
-	golang.org/x/text v0.13.0 // indirect
+	golang.org/x/sys v0.15.0 // indirect
+	golang.org/x/term v0.15.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
