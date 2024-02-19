@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/urfave/cli/v2 v2.27.1
 	k8s.io/api v0.28.5
-	k8s.io/apimachinery v0.28.6
+	k8s.io/apimachinery v0.28.7
 	k8s.io/cli-runtime v0.28.4
 	k8s.io/client-go v0.28.5
 	sigs.k8s.io/controller-runtime v0.16.3
